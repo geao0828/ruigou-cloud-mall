@@ -5,20 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ruigou</groupId>
-        <artifactId>ruigou-cloud-mall</artifactId>
+        <artifactId>mall-api</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <packaging>pom</packaging>
-    <modules>
-        <module>goods-api</module>
-        <module>mall-search-api</module>
-    </modules>
 
-    <artifactId>mall-api</artifactId>
+    <artifactId>mall-search-api</artifactId>
 
-    <description>
-        所有数据库表对应的Bean和Feign接口
-    </description>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -26,12 +18,10 @@
     </properties>
 
     <dependencies>
-        <!--MyBatis Plus-->
+        <!--ElasticSearch-->
         <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.3.4</version>
-            <scope>provided</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
     </dependencies>
 

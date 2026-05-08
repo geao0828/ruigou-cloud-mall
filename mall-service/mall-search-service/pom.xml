@@ -5,21 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ruigou</groupId>
-        <artifactId>ruigou-cloud-mall</artifactId>
+        <artifactId>mall-service</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <packaging>pom</packaging>
-    <modules>
-        <module>mall-goods-service</module>
-        <module>mall-file-service</module>
-        <module>mall-search-service</module>
-    </modules>
-
-    <artifactId>mall-service</artifactId>
-
     <description>
-        所有服务的父工程
+        搜索服务
     </description>
+
+    <artifactId>mall-search-service</artifactId>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -27,18 +21,12 @@
     </properties>
 
     <dependencies>
-        <!--依赖mall-service-dependency-->
+        <!--mall-search-api-->
         <dependency>
             <groupId>com.ruigou</groupId>
-            <artifactId>mall-service-dependency</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <!--依赖mall-common-->
-        <dependency>
-            <groupId>com.ruigou</groupId>
-            <artifactId>mall-common</artifactId>
+            <artifactId>mall-search-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 </project>
